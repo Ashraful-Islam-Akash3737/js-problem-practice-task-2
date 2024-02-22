@@ -30,5 +30,26 @@ const evenFriends = (friends) => {
     }
     return evenFriends;
 }
-
 console.log(evenFriends(friends));
+
+// problem 5
+const numbers = [12, 34, 23, 45, 11, 32];
+const average = (numbers) => {
+    // square number
+    let squareNumber = [];
+    for (const number of numbers) {
+        const element = number * number;
+        squareNumber.push(element);
+    }
+    // square number total
+    let sum = 0;
+    for (const num of squareNumber) {
+        sum = sum + num;
+    }
+
+    const lengthIs = squareNumber.length;
+    const average = parseFloat((sum / lengthIs).toFixed(2));
+    return average;
+
+}
+console.log(average(numbers));
