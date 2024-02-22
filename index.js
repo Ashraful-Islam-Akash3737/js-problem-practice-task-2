@@ -46,7 +46,7 @@ const average = (numbers) => {
     for (const num of squareNumber) {
         sum = sum + num;
     }
-
+    // return average
     const lengthIs = squareNumber.length;
     const average = parseFloat((sum / lengthIs).toFixed(2));
     return average;
