@@ -53,3 +53,11 @@ const average = (numbers) => {
 
 }
 console.log(average(numbers));
+
+// problem 6
+const num1 = [12, 45, 67, 34, 86];
+const num2 = [12, 98, 76, 34, 23];
+const num3 = [...num1, ...num2];
+// const num4 = (...num3);
+const max = Math.max(...num3);
+console.log(max);
