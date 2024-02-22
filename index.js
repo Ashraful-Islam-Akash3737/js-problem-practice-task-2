@@ -9,3 +9,9 @@ I love to code.
 I like to eat beriyani.`;
 console.log(mySelf);
 
+// problem 3
+const sum = (num1, num2 = 0) => {
+    const result = num1 + num2;
+    return result;
+}
+console.log(sum(5));
